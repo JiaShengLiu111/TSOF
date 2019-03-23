@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="60dp"
+    android:background="@drawable/bg_pic"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#ff8c00" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/search"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@drawable/text_view_border"
+            android:enabled="true"
+            android:hint="食物口味、食材名" >
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="5" 
+           
+            android:orientation="horizontal" >
+
+            <RadioButton 
+                android:id="@+id/radiobutton1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" 
+                android:text="菜名"
+                android:checked="true"
+                android:textColor="#333333" />
+
+            <RadioButton 
+                android:id="@+id/radiobutton2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" 
+                android:text="食材"
+                android:textColor="#333333" />
+
+            <RadioButton 
+                android:id="@+id/radiobutton3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" 
+                android:text="配料"
+                android:textColor="#333333" />
+
+            <RadioButton 
+                android:id="@+id/radiobutton4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" 
+                android:text="其他"
+                android:textColor="#333333" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="@drawable/searchbt"
+            android:textSize="15dp"
+            android:text="搜索"
+            android:textColor="#cccccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="#cccccc" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="17"
+        android:orientation="vertical" >
+
+        <com.android.tab.LineGridView
+            android:id="@+id/grid1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="5pt"
+            android:listSelector="@null"
+            android:numColumns="2"
+            android:smoothScrollbar="true"
+            android:soundEffectsEnabled="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5pt" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" >
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/cidlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="#00000000"
+            android:divider="#cccccc"
+            android:dividerHeight="1dp" >
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

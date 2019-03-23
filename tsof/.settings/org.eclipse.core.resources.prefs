@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+encoding//src/com/android/adapter/Food.java=UTF-8
+encoding//src/com/android/adapter/Foodsteps_item_Adapter.java=UTF-8
+encoding//src/com/android/adapter/MenulistAdapter.java=UTF-8
+encoding//src/com/android/adapter/MyListViewAdapter.java=UTF-8
+encoding//src/com/android/data/MyDbOpenHelper.java=UTF-8
+encoding//src/com/android/tab/About.java=UTF-8
+encoding//src/com/android/tab/Help.java=UTF-8
+encoding//src/com/android/tab/Menu.java=UTF-8
+encoding//src/com/android/tab/Menu_pid_foodlist.java=UTF-8
+encoding//src/com/android/tab/Search.java=UTF-8
+encoding//src/com/android/tab/more_food.java=UTF-8
+encoding//src/com/android/zhy/utils/L.java=UTF-8
+encoding//src/com/android/zhy/utils/ScreenUtils.java=UTF-8
+encoding/<project>=UTF-8

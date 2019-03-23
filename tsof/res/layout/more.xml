@@ -1,0 +1,221 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#000033" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/setting"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout> 
+    
+    
+    <RelativeLayout
+        android:id="@+id/ s"
+        android:layout_weight="11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#999999" >
+
+        <RelativeLayout
+            android:id="@+id/layout_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+             <TextView
+                android:id="@+id/settings_account"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="28dp"
+                android:paddingTop="5dp"
+                android:text="@string/setting_read"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+             
+ 
+            <TextView
+                android:id="@+id/settings_bound"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/settings_account"
+                android:layout_below="@+id/settings_account"
+                android:layout_marginLeft="48dp"
+                android:gravity="center_vertical"
+                android:text="@string/setting_noPic"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/settings_night"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/settings_account"
+                android:layout_below="@+id/settings_bound"
+                android:layout_marginLeft="48dp"
+                android:gravity="center_vertical"
+                android:text="@string/setting_night"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+           
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/settings_night"
+                android:layout_alignBottom="@+id/settings_night"
+                android:layout_alignLeft="@+id/checkBox1" />
+
+             
+
+            
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/settings_bound"
+                android:layout_alignBottom="@+id/settings_bound"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="59dp" />
+        </RelativeLayout>
+
+        <!-- 直线 -->
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout_account"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#c0c0c0" >
+        </View>
+
+        <RelativeLayout
+            android:id="@+id/layout_system"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/layout_account" >
+
+            <TextView
+                android:id="@+id/settings_system"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/setting_content"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/settings_system"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:gravity="center_vertical"
+                android:text="@string/setting_cache"
+                android:textColor="#000000"
+                android:textSize="15sp" /> 
+                
+            <TextView
+                android:id="@+id/more_food"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/clear_cache"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:gravity="center_vertical"
+                android:text="@string/more_food"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/settings_persona3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp" /> 
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layout_system"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#c0c0c0" />
+
+        <RelativeLayout
+            android:id="@+id/layout_others"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/settings_others"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/setting_info"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/others_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/settings_others"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp"
+                android:gravity="center_vertical"
+                android:text="@string/setting_help"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+            
+            <TextView
+                android:id="@+id/others_about"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/others_help"
+                android:layout_below="@+id/others_help"
+                android:layout_marginLeft="48dp"
+                android:gravity="center_vertical"
+                android:text="@string/setting_about"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+
+</LinearLayout>
