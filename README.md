@@ -1,9 +1,38 @@
 # TSOF
-该项目是一个基于安卓的美食查询application，其中主要文件意义如下，
+该项目是一个基于安卓的美食查询application。
 
-tsof：该项目源码；
+#### 文件结构
 
-Food_Recommend.apk：该app所对应的apk文件，可以直接下载到安卓手机上安装运行；
+**tsof**：该项目源码；
 
-[软件说明书.pdf](https://nbviewer.jupyter.org/github/JiaShengLiu111/TSOF/blob/master/%E8%BD%AF%E4%BB%B6%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)：该项目所对应的软件说明书；
+**Food_Recommend.apk**：该app所对应的apk文件，可以直接下载到安卓手机上安装运行；
 
+**软件说明书.pdf**：该项目所对应的软件说明书，详情请参见[这里](https://nbviewer.jupyter.org/github/JiaShengLiu111/TSOF/blob/master/%E8%BD%AF%E4%BB%B6%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf)；
+
+
+
+#### 应用界面
+
+**首页**：
+
+![1553697516074](./assets/1553697516074.png)
+
+**菜单**：
+
+![1553697573220](./assets/1553697573220.png)
+
+**菜式做法详情**：
+
+![1553697615703](./assets/1553697615703.png)
+
+**搜索页面**：
+
+![1553697670419](./assets/1553697670419.png)
+
+**搜索结果**：
+
+![1553697718201](./assets/1553697718201.png)
+
+**收藏页面**：
+
+![1553697771711](./assets/1553697771711.png)
